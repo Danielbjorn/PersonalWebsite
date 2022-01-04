@@ -1,0 +1,96 @@
+<!doctype html>
+{% load static %}
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	{% comment %}<title>Blog - Mustache Enthusiast</title>{% endcomment %}
+	<link rel="stylesheet" type="text/css" href="{% static 'website/css/MYTEST.css' %}"> 
+	<link rel="stylesheet" type="text/css" href="{% static 'website/css/mobile.css' %}" media="screen and (max-width : 568px)">
+	<script type="text/javascript" src="{% static 'website/js/mobile.js' %}"></script>
+</head>
+<body>
+	<div id="header">
+		<a href="index.html" class="logo">
+			<img src="{% static 'website/images/logo.png' %}" alt=""> 
+		</a>
+		<ul id="navigation">
+			<li  class="selected">
+				<a href="index.html">Home</a>
+			</li>
+			<li>
+				<a href="about.html">About</a>
+			</li>
+			<li>
+				<a href="gallery.html">Books</a>
+			</li>
+			<li>
+				<a href="blog.html">Reports</a>
+			</li>
+			<li>
+				<a href="contact.html">Contact</a>
+			</li>
+		</ul>
+	</div>
+	<div id="body">
+		<h1><span>Articles Written By Me</span></h1>
+		<div>
+			<ul>
+				<li>
+					<a href="blog-single-post.html" class="figure">
+						<img src="{% static 'website/images/dfinity.jpeg' %}" alt="">
+					</a>
+					<div>
+						<h3>Dfinity's Internet Computer Opens Ethereum Bridge</h3>
+						<p>
+							Ethereum-based assets can now natively exist on Internet Computer via the new cross-chain bridge. Here's why it's important for DeFi and what this means for Web3.0
+						</p>
+						<a href="blog-single-post.html" class="more">read this</a>
+					</div>
+				</li>
+				<li>
+					<a href="blog-single-post.html" class="figure">
+						<img src="{% static 'website/images/s2f.jpg' %}" alt="">
+					</a>
+					<div>
+						<h3>Bitcoin Faces Bear Sentiment As Christmas dDlivers $50k BTC </h3>
+						<p> Bitcoin bullish sentiment remains strong even though Stock 2 Flow model fails predections for the first time</p>
+						<a href="blog-single-post.html" class="more">read this</a>
+					</div>
+				</li>
+				<li>
+					<a href="blog-single-post.html" class="figure">
+						<img src="{% static 'website/images/mustache-brothers.jpg' %}" alt="">  
+					</a>
+					<div>
+						<h3>the mustache brothers</h3>
+						<p>
+							Our website templates are created with inspiration, checked for quality and originality and meticulously sliced and coded. What’s more, they’re absolutely free! You can do a lot with them. You can modify them.
+						</p>
+						<a href="blog-single-post.html" class="more">read this</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div id="footer">
+		<div>
+			<p>&copy; 2023 by Mustacchio. All rights reserved.</p>
+			<ul>
+				<li>
+					<a href="http://freewebsitetemplates.com/go/twitter/" id="twitter">twitter</a>
+				</li>
+				<li>
+					<a href="http://freewebsitetemplates.com/go/facebook/" id="facebook">facebook</a>
+				</li>
+				<li>
+					<a href="http://freewebsitetemplates.com/go/googleplus/" id="googleplus">googleplus</a>
+				</li>
+				<li>
+					<a href="http://pinterest.com/fwtemplates/" id="pinterest">pinterest</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>

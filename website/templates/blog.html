@@ -1,0 +1,111 @@
+<!doctype html>
+{% load static %}
+
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Mustache Enthusiast</title>
+	<link rel="stylesheet" href="{% static 'website/css/MYTEST.css' %}"> 
+	<link rel="stylesheet" type="text/css" href="{% static 'website/css/mobile.css' %}" media="screen and (max-width : 568px)">
+	<script type="text/javascript" src="{% static 'website/js/mobile.js' %}"></script>
+
+
+</head>
+<body>
+	<div id="header">
+		<a href="index.html" class="logo">
+			<img src="{% static 'website/images/logo.png' %}" alt="">  
+		</a>
+		<ul id="navigation">
+			<li>
+				<a href="index.html">Home</a>
+			</li>
+			<li>
+				<a href="about.html">About</a>
+			</li>
+			<li>
+				<a href="gallery.html">Books</a>
+			</li>
+			<li class="selected">
+				<a href="blog.html">Reports</a>
+			</li>
+			<li>
+				<a href="contact.html">Contact</a>
+			</li>
+		</ul>
+	</div>
+	<div id="body"> 
+		<h1><span>Detailed Analysis of subjects</span></h1>
+		<div id="featured"> 
+			{% comment %}<img src="{% static 'website/images/the-beacon.jpg' %}" alt=""> {% endcomment %}
+			<div> {% comment %}
+				<h2> the beacon to all mankind</h2> 
+				<span>Our website templates are created with</span> 
+				<span>inspiration, checked for quality and originality</span> 
+				<span>and meticulously sliced and coded.</span> 
+				<a href="blog-single-post.html" class="more">read more</a> 
+				{% endcomment %}
+			</div>
+		</div>
+		<ul>
+			<li>
+				<a href="gallery.html">
+					<img src="{% static 'website/images/btc.jpg' %}" alt=""> 
+					<div class = "Articletext">Bitcoin Fundamentals</div>
+				</a>
+			</li>
+			<li>
+				<a href="gallery.html">
+					<img src="{% static 'website/images/eth.jpeg' %}" alt=""> 
+					<div class = "Articletext">Ethereum Fundamentals</div>
+				</a>
+			</li>
+			<li>
+				<a href="gallery.html">
+					<img src="{% static 'website/images/ada.jpg' %}" alt=""> 
+					<div class = "Articletext">Cardano Fundamentals</div>
+				</a>
+			</li>
+			<li>
+				<a href="gallery.html">
+					<img src="{% static 'website/images/sol.jpg' %}" alt=""> 
+					<div class = "Articletext">Solana Fundamentals</div>
+				</a>
+			</li>
+			<li>
+				<a href="gallery.html">
+					<img src="{% static 'website/images/btc.jpg' %}" alt=""> 
+					<div class = "Articletext">Bitcoin Fundamentals</div>
+				</a>
+			</li>
+			<li>
+				<a href="gallery.html">
+					<img src="{% static 'website/images/btc.jpg' %}" alt=""> 
+					<div class = "Articletext">Bitcoin Fundamentals</div>
+				</a>
+			</li>
+
+		</ul>
+	</div>
+	<div id="footer">
+		<div>
+			<p> </p>
+			<ul>
+				<li>
+					<a href="http://freewebsitetemplates.com/go/twitter/" id="twitter">twitter</a>
+				</li>
+				<li>
+					<a href="http://freewebsitetemplates.com/go/facebook/" id="facebook">facebook</a>
+				</li>
+				<li>
+					<a href="http://freewebsitetemplates.com/go/googleplus/" id="googleplus">googleplus</a>
+				</li>
+				<li>
+					<a href="http://pinterest.com/fwtemplates/" id="pinterest">pinterest</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>

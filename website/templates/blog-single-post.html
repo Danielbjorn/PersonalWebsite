@@ -1,0 +1,72 @@
+<!doctype html>
+{% load static %}
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Blog Single Post - Mustache Enthusiast</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'website/css/MYTEST.css' %}"> 
+	<link rel="stylesheet" type="text/css" href="{% static 'website/css/mobile.css' %}" media="screen and (max-width : 568px)">
+	<script type="text/javascript" src="{% static 'website/js/mobile.js' %}"></script>
+</head>
+<body>
+	<div id="header">
+		<a href="index.html" class="logo">
+			<img src="{% static 'website/images/logo.png' %}" alt="">
+		</a>
+		<ul id="navigation">
+			<li>
+				<a href="index.html">Home</a>
+			</li>
+			<li>
+				<a href="about.html">About</a>
+			</li>
+			<li>
+				<a href="gallery.html">Books</a>
+			</li>
+			<li class="selected">
+				<a href="blog.html">Reports</a>
+			</li>
+			<li>
+				<a href="contact.html">Contact</a>
+			</li>
+		</ul>
+	</div>
+	<div id="body">
+		
+		<div>
+			<img src="{% static 'website/images/grew-a-mustache.jpg' %}" alt=""> 
+			<div class="article">
+				<h2>Dfinity's Internet Computer Opens Ethereum Bridge</h2>
+				<p>
+					Ethereum-based assets can now natively exist on Internet Computer via the new cross-chain bridge.
+				</p>
+				<p>
+					Looking for more templates? Just browse through all our Free Website Templates and find what you’re looking for. But if you don’t find any website template you can use, you can try our Free Web Design service and tell us all about it. Maybe you’re looking for something different, something special. And we love the challenge of doing something different and something special.
+				</p>
+				<p>
+					If you’re experiencing issues and concerns about this website template, join the discussion on our forum and meet other people in the community who share the same interests with you. Website Template details, discussion and updates for this Mustacchio Template. Website Template design by Free Website Templates.
+				</p>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		<div>
+			
+			<ul>
+				<li>
+					<a href="http://freewebsitetemplates.com/go/twitter/" id="twitter">twitter</a>
+				</li>
+				<li>
+					<a href="http://freewebsitetemplates.com/go/facebook/" id="facebook">facebook</a>
+				</li>
+				<li>
+					<a href="http://freewebsitetemplates.com/go/googleplus/" id="googleplus">googleplus</a>
+				</li>
+				<li>
+					<a href="http://pinterest.com/fwtemplates/" id="pinterest">pinterest</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>
