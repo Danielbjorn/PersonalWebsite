@@ -8,7 +8,7 @@ class List(models.Model):
 		return self.BookName
 
 
-class BooksList(models.Model):
+class BookList(models.Model):
 	book_name = models.CharField(max_length=200)
 	book_summary = models.CharField(max_length=50000)
 	book_image = models.ImageField(upload_to='images')

@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from django.core.mail import send_mail
 from .models import List
-from .models import BooksList
+from .models import BookList
 from .forms import ListForm
 from .forms import BookForm
 from django.contrib import messages
@@ -14,10 +14,12 @@ def index(request):
 def about(request): 
 	return render(request, 'about.html', {} )
 
+
+
 def addbook(request):
 	
-
 	if request.method == 'POST':
+
 		bookform = BookForm(request.POST, request.FILES)
 		
 		if bookform.is_valid():
@@ -26,20 +28,10 @@ def addbook(request):
 			return render(request, 'addbook.html', {'bookform': bookform, 'book_obj': book_obj})
 
 	else:
+
 		bookform = BookForm()
 
 	return render(request, 'addbook.html', {'bookform': bookform})
-
-
-
-	
-
-
-
-
-
-
-
 
 
 
@@ -48,8 +40,22 @@ def books_single(request):
 	return render(request, 'books_single_post.html', {} )
 
 def books(request):
-	all_items = List.objects.all
-	return render(request, 'books.html', {'all_items': all_items} )
+	
+	book_obj = BookList.objects.all
+	return render(request, 'books.html', {'book_obj': book_obj} )
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 def reports(request): 
 	return render(request, 'reports.html', {} )
