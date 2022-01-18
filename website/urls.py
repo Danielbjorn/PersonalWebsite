@@ -14,7 +14,8 @@ urlpatterns = [
     	path('reports.html', views.reports, name = "reports"), 
     	path('blog-single-post.html', views.blogsingle, name = "blogsingle"), 
     	path('contact.html', views.contact, name = "contact"), 
+        path('upload/', views.addbook, name = "addbook"),
 
-        path('upload/', views.addbook, name= "addbook"),
     	path('delete/<list_id>', views.delete, name='delete'),
+        path('show_book/<book_id>', views.show_book, name = "show-book"), 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
