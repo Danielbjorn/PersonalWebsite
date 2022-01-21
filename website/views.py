@@ -29,7 +29,7 @@ def blogsingle(request):
 	return render(request, 'blog-single-post.html', {} )	
 
 def contact(request): 
-
+	
 	if request.method == "POST":
 
 		fname = request.POST['fname']
@@ -55,7 +55,7 @@ def contact(request):
 
 
 def addbook(request):
-	
+
 	if request.method == 'POST':
 
 		bookform = BookForm(request.POST, request.FILES)
@@ -74,13 +74,12 @@ def addbook(request):
 
 def delete(request, list_id): 
 
-	BookName = BookList.objects.get(pk=list_id)
-	BookName.delete()
+	bookdelete = BookList.objects.get(pk=list_id)
+	bookdelete.delete()
 	messages.success(request, ('Book Has Been Removed From Database!'))
 	return redirect('books')
 
 def show_book(request, book_id):
 
 	book = BookList.objects.get(pk=book_id)
-
 	return render(request, 'show_book.html', {'book': book} )
